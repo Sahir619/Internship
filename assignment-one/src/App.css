@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  text-align: left;
+  background-color: black;
+  color: #fff;
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.para{
+  background: red;
+  color: gold;
+  padding: 20px 20px;
+  text-align: center;
+
+}
+
+.image{ 
+  margin-left: 400px;
+  margin-right: 400px;
+  width: 50%;
+}
+
+.link{
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  background: #008000;
+ padding: 20px 20px;
+}
+
