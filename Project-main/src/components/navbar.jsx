@@ -15,27 +15,33 @@ const Navbar = () =>{
         setActiveLink(location.pathname)
     },[location])
     return(
-        <div className="navbar">
-            
-            <div className="navbar-logo" onClick={gotoHome}>
-                <img src={logo} alt=""/>
-            </div>
+        <header className="hero">
 
-            <ul className="navbar-menu">
-                <li className={activeLink ==="/" ? "active":""}>
-                    <Link to="/">Home</Link>
-                </li>
-                <li className={activeLink ==="/AboutUs" ? "active":""}>
-                    <Link to="/AboutUs">About Us</Link>
-                </li>
-                <li className={activeLink ==="/Nft" ? "active":""}>
-                    <Link to="/Nft">NFT</Link>
-                </li>
-                <li className={activeLink ==="/ContactUs" ? "active":""}>
-                    <Link to="/ContactUs">Contact Us</Link>
-                </li>
-            </ul>
-        </div>
+            <div className="navbar">
+                
+                <div className="navbar-logo" onClick={gotoHome}>
+                    <img src={logo} alt=""/>
+                </div>
+
+                <ul className="navbar-menu">
+                    <li className={activeLink ==="/" ? "active":""}>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li className={activeLink ==="/AboutUs" ? "active":""}>
+                        <Link to="/AboutUs">About Us</Link>
+                    </li>
+                    <li className={activeLink ==="/Nft" ? "active":""}>
+                        <Link to="/Nft">NFT</Link>
+                    </li>
+                    <li className={activeLink ==="/ContactUs" ? "active":""}>
+                        <Link to="/ContactUs">Contact Us</Link>
+                    </li>
+                    <li className={activeLink ==="/Nftpay" ? "active":""}>
+                        <Link to="/Nftpay">Nftpay</Link>
+                    </li>
+                </ul>
+            </div>
+        </header>
     )
 }
 export default Navbar;

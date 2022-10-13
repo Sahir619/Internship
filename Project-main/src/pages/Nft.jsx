@@ -1,12 +1,12 @@
 import React from "react";
-import "./style.css"
+import App from "./CardApp"
 
 const Nft = () => {
-    return(
+    return (
         <div className="container">
-            <h1>Nft</h1>
-            <h4>This is Nft Page</h4>
+          <App/>
         </div>
-    )
+      );
 }
-export default Nft;
+
+export default Nft

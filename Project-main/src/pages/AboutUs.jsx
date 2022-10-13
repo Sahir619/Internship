@@ -30,7 +30,7 @@ const AboutUs = () => {
                 <div>
                     <h2 className="section01-h2">Our <span className="htext">Team</span></h2>
                 </div>
-                <p className="section01-p"> Our team consists of  Sahir Sikander, Nathan Fernandes, Siddhi Shirodkar and Rutuja Volvoikar.<br/>We aim to provide Real Estate services in the form of  NFTs.</p>
+                <p className="section01-p"> Our team consists of  Sahir Sikander, Nathan Fernandes, Siddhi Shirodkar and Rutuja Volvoikar.<br/><br/>We aim to provide Real Estate services in the form of  NFTs.</p>
             </div>
         </div>
     )

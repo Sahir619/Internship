@@ -7,6 +7,7 @@
     background-color:#fff;
     display: flex;
     justify-content: space-between;
+    border: #333 solid 1px;
     &-logo{
         width: 30vw;
         height: 100%;
@@ -47,21 +48,35 @@
         }
     }
 }
+.hero{
+    height: 7vh;
+    position: relative;
+}
 
-
-    
-
-
-
-
+.herofoot{
+    margin-top: auto;
+    height: 350px;
+    bottom: 0;
+    left: 0;
+}
+.grad::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: -5;
+}
 .background{
     position: absolute;
     width: 100%;
     height: 100%;
     position: absolute;
-    object-fit: cover;
+    object-fit: cover no_repeat center/cover;
     opacity: 0.8;
-    z-index: -1;
+    z-index: -10;
     
 }
 
@@ -102,6 +117,7 @@
     }
     &-button
     {
+        cursor: pointer;
         margin-left: 42%;
         width: 40vmin;
         height: 10vh;
@@ -110,7 +126,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 30px;
-        background: #F2F2F2;
+        background: #fff;
         mix-blend-mode: normal;
         border: 1px solid #000000;
     }
@@ -172,6 +188,7 @@
     }
     &-button
     {
+        cursor: pointer;
         margin-left: 20px;
         width: 40vmin;
         height: 10vh;
@@ -180,31 +197,27 @@
         font-style: normal;
         font-weight: 400;
         font-size: 30px;
-        background: #F2F2F2;
+        background: #fff;
         mix-blend-mode: normal;
         border: 1px solid #000000;
     }
 }
 .footer{
-    margin-top: 10%;
-    background-color: #333333;
-    display: flex;
-    flex-wrap: wrap;
-    height: 45%;
-    border: 1px solid #333333;
+    height: 300px;
+    width: 97%;
+    padding: 40px 20px;
+    bottom: 0;
+    left: 0;
+    margin-top: 50px;
+    text-align: center;
+    background: #000000;
+    color: #000000;
     &-img{
-        margin-top: 4%;
-        height: 35%;
         width: 100%;
-        object-fit: contain;
     }
+    
 }
-.footerh5{
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: black;
-    color: #fff;
-}
+
 h5{
     font-family: 'Inter';
     font-style: normal;
@@ -245,6 +258,7 @@ h5{
         font-weight: 400;
         font-size: 40px;
         color: #FFFFFF;  
+        z-index: 10;
     }
     &-h3{
         margin-top:0;
@@ -264,6 +278,7 @@ h5{
     margin: -3%;
     width: 101.7vw;
     height: 50vh;
+    z-index: -10;
 }
 .section01{
     box-sizing: border-box;

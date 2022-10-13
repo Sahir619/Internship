@@ -1,12 +1,12 @@
 import React from "react";
+import "./style.css"
 import bg10 from "../assets/images/image10.png"
-import "./Contact.css"
-
+import "./ContactUs.css"
 const ContactUs = () => {
     return(
-
+    <div>
         <body>
-            <img src={bg10} alt=""/>
+            <img className="conimg" src={bg10} alt=""/>
             
             <div>
                 <form action="" className="contact">
@@ -32,7 +32,7 @@ const ContactUs = () => {
             </div>
             
         </body>
-      
+    </div>
     )
 }
 export default ContactUs;
